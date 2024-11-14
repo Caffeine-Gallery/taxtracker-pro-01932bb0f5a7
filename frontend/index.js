@@ -81,8 +81,8 @@ function displaySearchResult(taxPayer) {
             <div class="card">
                 <div class="card-body">
                     <h5 class="card-title">${taxPayer.tid}</h5>
-                    <p class="card-text">Name: ${taxPayer.firstName} ${taxPayer.lastName}</p>
-                    <p class="card-text">Address: ${taxPayer.address}</p>
+                    <p class="card-text">Name: ${taxPayer.firstName || ''} ${taxPayer.lastName || ''}</p>
+                    <p class="card-text">Address: ${taxPayer.address || ''}</p>
                 </div>
             </div>
         `;
